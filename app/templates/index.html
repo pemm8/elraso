@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/paul.css') }}" />
+		<script src="https://use.fontawesome.com/b05eae9fb6.js"></script>
 	</head>
 	<body>
 
@@ -15,8 +16,11 @@
 			<!-- One -->
 			<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 				<div class="content">
-					<h1>Villa on the Costa Del Sol, Spain - <i>For Sale</i></h1>
-					<p class="major">A 4 bed, 3 bath villa with private gardens, access to pool, located near the coast.</p>
+					<header>
+						<h1>Villa on the Costa Del Sol, Spain</h1>
+					</header>
+					<span id="for-sale">For Sale</span>
+					<p class="major">Four bedroom, three bathroom villa with private garden, access to swimming pool, 10 minutes from the Spanish coast.</p>
 					<ul class="actions vertical">
 						<li><a href="#first" class="button big wide smooth-scroll-middle">Find out more</a></li>
 					</ul>
@@ -82,7 +86,7 @@
 			<!-- Five -->
 			<section class="wrapper style1 align-center embolden" id="fourth">
 				<div class="inner">
-					<h2 class="bold">Now for sale - offers over €xxx,xxx</h2>
+					<h1 class="bold">Now for sale - offers over €xxx,xxx</h1>
 					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p> -->
 				</div>
 
@@ -240,33 +244,41 @@
 			<section class="wrapper style1 align-center">
 				<div class="inner">
 					<h2>Convenience Included.</h2>
-					<p>The house and region has so much to offer ...</p>
-					<div class="items style1 medium onscroll-fade-in">
+<!-- 					<p>The house and region has so much to offer ...</p>
+ -->					<div class="items style1 medium onscroll-fade-in">
 						<section>
 							<span class="icon style2 major fa-car"></span>
 							<h3>Private driveway & interior garage</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</section>
 						<section>
-							<span class="icon style2 major fa-sun-o"></span>
-							<h3>10 minute drive to beach</h3>
+							<span class="icon style2 major fa-bath"></span>
+							<h3>Three full bathrooms</h3><br>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</section>
 						<section>
-							<span class="icon style2 major fa-bath"></span>
-							<h3>Three full bathrooms</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<span class="icon style2 major fa-thermometer-0"></span>
+							<h3>Air-conditioned throughout</h3>
+							<p>Air conditioning fitted to all bedrooms and lounge.</p>
 						</section>
 						<section>
 							<span class="icon style2 major fa-cutlery"></span>
-							<h3>Local restaurants just a few minutes walk</h3>
+							<h3>Local restaurants & bars just a few minutes walk</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</section>
 						<section>
-							
+							<span class="icon style2 major fa-sun-o"></span>
+							<h3>10 minute drive to quiet, white sand beaches</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</section>
 						<section>
-							
+							<span class="icon style2 major fa-plane"></span>
+							<h3>Two airports within 30 minutes drive</h3>
+							<p>Located just 30 minutes drive from both Alicante & Murcia San Javier airports, with multiple flights daily to European destinations.</p>
+						</section>
+						<section>
+
+						</section>
 					</div>
 				</div>
 			</section>
@@ -274,7 +286,7 @@
 				<!-- Seven -->
 			<section class="wrapper style1 align-center">
 				<div class="inner medium">
-					<h2>Get in touch</h2>
+					<h2>Interested?   Get in touch.</h2>
 					<form method="post" action="#">
 						<div class="field half first">
 							<label for="name">Name</label>
