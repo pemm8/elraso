@@ -308,11 +308,11 @@
 				</div>
 			</section> -->
 			
-			<section class="wrapper style1 align-center">
+			<section class="wrapper style1 align-center" id="contact-form">
 				<div class="inner medium">
 					<h2>Interested?   Get in touch.</h2>
 					{% from "_formhelpers.html" import render_field %}
-			 		<form method="POST" action="{{ url_for('home') }}" role="form">
+			 		<form method="POST" action="{{ url_for('home', _anchor='contact-form') }}" role="form">
 
       					{{ form.hidden_tag() }}
 						

@@ -11,10 +11,13 @@ from forms import ContactForm
 @app.route('/index', methods=('GET', 'POST'))
 def home():
     form = ContactForm()
-    if request.method == "POST" and form.validate_on_submit():
-        # todo: do something with data entered
-        # todo: flash success / error message
-        return render_template('index.html',form=form)
+    if request.method == "POST":
+    	if form.validate_on_submit():
+        	# todo: do something with data entered
+        	# todo: flash success / error message
+        	pass
+        else:
+	        return render_template('index.html',form=form)
     else:
 	    return render_template('index.html',form=form)
 
