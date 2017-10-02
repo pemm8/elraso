@@ -1,5 +1,5 @@
 import os
-from flask import render_template, request
+from flask import render_template, request, redirect, session, url_for, abort
 from flask_admin.contrib.sqla import ModelView
 from flask_admin.contrib.fileadmin import FileAdmin
 
@@ -15,7 +15,8 @@ def home():
         # todo: do something with data entered
         # todo: flash success / error message
         return render_template('index.html',form=form)
-	return render_template('index.html',form=form)
+    else:
+	    return render_template('index.html',form=form)
 
 # admin views
 path = os.path.join(os.path.dirname(__file__), 'static')

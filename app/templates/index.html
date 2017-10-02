@@ -283,8 +283,8 @@
 				</div>
 			</section>
 
-				<!-- Seven -->
-			<section class="wrapper style1 align-center">
+			<!-- Contact Form -->
+			<!-- <section class="wrapper style1 align-center">
 				<div class="inner medium">
 					<h2>Interested?   Get in touch.</h2>
 					<form method="post" action="#">
@@ -306,23 +306,24 @@
 					</form>
 
 				</div>
-			</section>
+			</section> -->
 			
 			<section class="wrapper style1 align-center">
 				<div class="inner medium">
 					<h2>Interested?   Get in touch.</h2>
-			 		<form method="POST" action="{{ url_for('/') }}" role="form">
+					{% from "_formhelpers.html" import render_field %}
+			 		<form method="POST" action="{{ url_for('home') }}" role="form">
 
       					{{ form.hidden_tag() }}
 						
 						<div class="field half first">
-      						{{ render_field(form.name, class='form-control') }}
+      						{{ render_field(form.name) }}
       					</div>
       					<div class="field half">
-      						{{ render_field(form.email, class='form-control') }}
+      						{{ render_field(form.email) }}
       					</div>
       					<div class="field">
-      						{{ render_field(form.message, class='form-control') }}
+      						{{ render_field(form.message) }}
       					</div>
 
       					<button type="submit" name="submit" id="submit" class="">Send Message</button>
@@ -334,13 +335,6 @@
 				<!-- Footer -->
 			<footer class="wrapper style1 align-center">
 				<div class="inner">
-					<!-- <ul class="icons">
-						<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-					</ul> -->
 					<p>&copy; Paul McLear, 2017</p>
 				</div>
 			</footer>
