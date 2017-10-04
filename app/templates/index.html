@@ -309,6 +309,17 @@
 			</section> -->
 			
 			<section class="wrapper style1 align-center" id="contact-form">
+
+				{% with messages = get_flashed_messages() %}
+					{% if messages %}
+					<div>
+						{% for message in messages %}
+							<span class="message-success">{{ message }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+				{% endwith %}
+ 
 				<div class="inner medium">
 					<h2>Interested?   Get in touch.</h2>
 					{% from "_formhelpers.html" import render_field %}
