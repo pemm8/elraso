@@ -26,6 +26,6 @@ def home():
 
 # admin views
 path = os.path.join(os.path.dirname(__file__), 'static')
-admin.add_view(FileAdmin(path, '/static/', name='Static Files'))
-admin.add_view(ModelView(Page, db.session))
-admin.add_view(ModelView(Spotlight, db.session))
+# admin.add_view(FileAdmin(path, '/static/', name='Static Files'))
+# admin.add_view(ModelView(Page, db.session))
+# admin.add_view(ModelView(Spotlight, db.session))
